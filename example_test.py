@@ -4,7 +4,7 @@ Exemple d'utilisation de SPQR
 Ce script montre comment utiliser SPQR programmatiquement
 """
 
-from spqr_cli import SPQRSimple
+from python_modules.spqr_cli import *
 import json
 
 def main():
@@ -17,7 +17,7 @@ def main():
     print("\nTypes d'attaques disponibles:")
     for attack_type in spqr.list_attack_types():
         print(f"  - {attack_type}")
-    
+
     # Effectuer un test rapide
     print("\nTest rapide avec 'web_attack':")
     results = spqr.quick_test("web_attack")
